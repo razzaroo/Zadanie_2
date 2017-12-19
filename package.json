@@ -1,0 +1,23 @@
+{
+  "name": "Zadanie_2",
+  "version": "1.0.0",
+  "description": "https://razzaroo.github.io/Zadanie_2/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razzaroo/Zadanie_2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razzaroo/Zadanie_2/issues"
+  },
+  "homepage": "https://github.com/razzaroo/Zadanie_2#readme",
+  "dependencies": {
+    "browser-sync": "^2.19.0"
+  }
+}
