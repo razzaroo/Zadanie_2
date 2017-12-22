@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/razzaroo/Zadanie_2#readme",
   "dependencies": {
-    "browser-sync": "^2.19.0"
+    "autoprefixer-cli": "^1.0.0",
+    "browser-sync": "^2.19.0",
+    "nu-html-checker": "^0.1.0"
   }
 }
