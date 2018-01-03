@@ -15,12 +15,16 @@
         "build:clean": "rimraf css/*.css", "build:sass": "node-sass --output-style compact -o css sass",
         "build:sass:dev": "node-sass --output-style expanded --source-map true -o css sass",
         "build:autoprefixer": "autoprefixer-cli css/style.css",
-        "watch": "parallelshell \"npm run watch:sass\" \"npm run watch:autoprefixer\" \"npm run watch:browsersync\" ",
-        "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",
-        "watch:autoprefixer": "onchange -d 100 css/style.css -- autoprefixer-cli -o css/style.prefixed.css css/style.css",
-        "watch:browsersync": "browser-sync start --server --files css/*.css *.html"
-    },
-    "repository": {
+        
+"watch": "parallelshell \"npm run watch:sassprefixer\" \"npm run watch:browsersync\" ",
+        
+"watch:sassprefixer": "onchange -d 100 sass/*.scss -- parallelshell \"autoprefixer-cli css/style.css\" \"node-sass --output-style expanded --source-map true -o css sass\" ",
+        
+"watch:browsersync": "browser-sync start --server --files css/*.css *.html"
+    
+},
+    
+"repository": {
         "type": "git",
         "url": "git+https://github.com/razzaroo/Zadanie_2.git"
     },
