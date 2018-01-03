@@ -18,7 +18,7 @@
         
 "watch": "parallelshell \"npm run watch:sassprefixer\" \"npm run watch:browsersync\" ",
         
-"watch:sassprefixer": "onchange -d 100 sass/*.scss -- parallelshell \"autoprefixer-cli css/style.css\" \"node-sass --output-style expanded --source-map true -o css sass\" ",
+"watch:sassprefixer": "onchange -d 100 sass/style.scss -- parallelshell \"node-sass --output-style expanded --source-map true -o css sass\" \"autoprefixer-cli css/style.css\" ",
         
 "watch:browsersync": "browser-sync start --server --files css/*.css *.html"
     
